@@ -43,6 +43,8 @@
             this.comboMonth = new System.Windows.Forms.ComboBox();
             this.comboYear = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboP = new System.Windows.Forms.ComboBox();
+            this.n = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +102,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(73, 313);
+            this.label6.Location = new System.Drawing.Point(72, 313);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 5;
@@ -190,7 +192,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(71, 416);
+            this.button1.Location = new System.Drawing.Point(71, 461);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 31);
             this.button1.TabIndex = 14;
@@ -198,13 +200,35 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // comboP
+            // 
+            this.comboP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboP.FormattingEnabled = true;
+            this.comboP.Location = new System.Drawing.Point(72, 407);
+            this.comboP.Name = "comboP";
+            this.comboP.Size = new System.Drawing.Size(374, 28);
+            this.comboP.TabIndex = 15;
+            this.comboP.Text = "-Select program-";
+            // 
+            // n
+            // 
+            this.n.AutoSize = true;
+            this.n.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n.Location = new System.Drawing.Point(73, 384);
+            this.n.Name = "n";
+            this.n.Size = new System.Drawing.Size(153, 20);
+            this.n.TabIndex = 16;
+            this.n.Text = "Program to Apply*";
+            // 
+            // frmStudentRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StudentRegistrationApplication2.Properties.Resources.OIP__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(526, 495);
+            this.ClientSize = new System.Drawing.Size(526, 536);
+            this.Controls.Add(this.n);
+            this.Controls.Add(this.comboP);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboYear);
             this.Controls.Add(this.comboMonth);
@@ -220,7 +244,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmStudentRegistration";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -245,6 +269,8 @@
         private System.Windows.Forms.ComboBox comboMonth;
         private System.Windows.Forms.ComboBox comboYear;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboP;
+        private System.Windows.Forms.Label n;
     }
 }
 
